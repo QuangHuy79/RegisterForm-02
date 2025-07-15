@@ -22,18 +22,6 @@ function RegisterForm() {
       .required("Nhập lại mật khẩu là bắt buộc"),
   });
 
-  //   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
-  //   try {
-  //     await registerUser(values); // giả sử gọi API
-  //     toast.success("🎉 Đăng ký thành công!");
-  //     resetForm();
-  //   } catch (err) {
-  //     toast.error("❌ Có lỗi xảy ra, thử lại sau!");
-  //   } finally {
-  //     setSubmitting(false);
-  //   }
-  // };
-
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
       await registerUser(values);
