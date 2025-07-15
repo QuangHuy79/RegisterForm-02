@@ -15,12 +15,6 @@ function LoginForm() {
     password: Yup.string().required("Bắt buộc"),
   });
 
-  //   const handleSubmit = async (values, { setSubmitting }) => {
-  //     // Giả lập đăng nhập (đặt breakpoint hoặc log nếu cần)
-  //     toast.success("Đăng nhập thành công!");
-  //     setSubmitting(false);
-  //   };
-
   const handleSubmit = async (values, { setSubmitting }) => {
     try {
       const res = await fetch(
