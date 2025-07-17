@@ -42,7 +42,7 @@ function RegisterForm() {
       onSubmit={handleSubmit}
     >
       {({ isSubmitting }) => (
-        <Form className="p-4 shadow rounded bg-white">
+        <Form>
           <h2 className="mb-4 text-center">Đăng ký</h2>
           <FieldInput name="username" label="Tên người dùng" type="text" />
           <FieldInput name="email" label="Email" type="email" />
